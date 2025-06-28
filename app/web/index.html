@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Azure Tenant Finder</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f47b.png" alt="Azure Ghost" class="mascot" width="64" height="64" />
+        <h1>Azure Tenant Finder</h1>
+        <p class="subtitle">Because finding your tenant ID shouldn't be scarier than your cloud bill! 👻</p>
+        <form id="tenantForm">
+            <input type="text" id="tenantName" placeholder="Enter Azure Tenant Name" required />
+            <button type="submit">Find Tenant ID</button>
+        </form>
+        <div id="result"></div>
+        <div class="hint">Tip: Try <span class="example">microsoft.com</span> or <span class="example">contoso.onmicrosoft.com</span></div>
+    </div>
+    <footer>
+        <span class="footer-text">Made with <span class="heart">&#10084;&#65039;</span> in the cloud. No ghosts were harmed.</span>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
