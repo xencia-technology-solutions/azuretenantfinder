@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <div class="background-overlay"></div>
     <div class="container">
         <img src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/72x72/1f47b.png" alt="Azure Ghost" class="mascot" width="64" height="64" />
         <h1>Azure Tenant Finder</h1>
@@ -15,7 +16,12 @@
             <input type="text" id="tenantName" placeholder="Enter Azure Tenant Name" required />
             <button type="submit">Find Tenant ID</button>
         </form>
-        <div id="result"></div>
+        <div id="result-wrapper">
+            <div id="result"></div>
+            <button id="copyBtn" title="Copy Tenant ID" style="display:none;" aria-label="Copy Tenant ID">
+                <svg width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="5" y="5" width="10" height="12" rx="2" fill="#2563eb"/><rect x="2" y="2" width="10" height="12" rx="2" fill="#60a5fa"/><path d="M7 8h6M7 11h6" stroke="#fff" stroke-width="1.5" stroke-linecap="round"/></svg>
+            </button>
+        </div>
         <div class="hint">Tip: Try <span class="example">microsoft.com</span> or <span class="example">contoso.onmicrosoft.com</span></div>
     </div>
     <footer>
